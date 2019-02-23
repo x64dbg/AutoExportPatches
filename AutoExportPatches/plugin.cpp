@@ -46,6 +46,7 @@ PLUG_EXPORT void CBLOADDB(CBTYPE, PLUG_CB_LOADSAVEDB* info)
     size_t i;
     json_t* jpatch;
     patches.clear();
+    modPatches.clear();
     json_array_foreach(jpatches, i, jpatch) //https://jansson.readthedocs.io/en/2.10/apiref.html#c.json_array_foreach
     {
         DBGPATCHINFO patch;
